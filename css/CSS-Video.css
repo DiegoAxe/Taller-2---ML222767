@@ -62,10 +62,6 @@ nav img{
     display: block;
 }
 
-nav svg, nav label, [id^=open]{
-    display: none;
-}
-
 video {                                             /* Tamaño requerido  para el video, reservado para pantallas mas largas */
     width: 640px;
     height: 360px;
@@ -136,6 +132,9 @@ footer div span{
     margin-left: 20px;
     font-size: 1.8rem
 }
+br {
+    display: none;
+}
 
 @media screen and (min-width:1254px) and (max-width:1599px){
 
@@ -171,46 +170,23 @@ footer div span{
     }
 }
 
-@media screen and (max-width:999px){
+@media screen and (max-width:1253px){
 
     nav ul li{
         font-size: 1.6rem;
-        display: none;
-        width: 100%;
-        border-top: 1px solid white;
+        width: 49.5%;
+        border: 1px solid white;
+        border-collapse:collapse;
     }
-    
-    nav img{
-        width: 100px;
-        float: left;
-        margin-top: -20px;
-    }
-
-    nav label {
-        float: right;
-        margin-right: 40px;
-        display: block;
-        cursor: pointer;
-    }
-    
-    nav svg{
-        width: 100px;
-        height: 100px;
-        margin-top: -20px;
-        display: block;
+    nav #marked{
+        width: 99.6%;
     }
 
     #liIMG{
-        width: 100%;
+        width: 98.8%;
         padding-top: 24px;
-        padding-bottom: 40px;
+        padding-bottom: 20px;
         border-top: 0px;
-        display: block;
-    }
-
-    [id^="open"]:checked .open-check{
-        display: block;
-        width: 100%;
     }
 
     video {                                
@@ -233,6 +209,10 @@ footer div span{
 
     section{
         padding-left: 10px;
+    }
+
+    br{
+        display: block;
     }
 }
 
