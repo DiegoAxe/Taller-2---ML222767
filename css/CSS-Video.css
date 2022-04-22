@@ -1,0 +1,238 @@
+@font-face {
+    font-family: Typewriter;
+    src: url(../EuropeanTypewriter.ttf) format("truetype");
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+*{
+    text-decoration: none;
+    list-style: none;   
+    padding: 0;
+    margin: 0;
+    font-family:Typewriter	;
+}
+
+body{
+    background-image:url("../img/Fondo.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+nav{
+    background-color: black;
+    color: white;
+    width: 100%;
+    position: relative;
+    top: 0;
+}
+
+nav ul li{
+    display: inline-block;
+    font-size: 1.8rem;
+    width: 16%;
+    text-align: center;
+    padding: 15px 0 15px 0;
+}
+
+#liIMG{
+    width: 18.5%;
+    font-size: 2rem;
+    padding: 10px 8px 5px 0;
+}
+
+nav ul li#marked{
+    background-color: #212F3D;
+}
+nav ul li:hover{
+    background-color: grey;
+}
+
+nav ul li#marked:hover{
+    background-color: #4D5656;
+}
+
+nav img{
+    width: 60px;
+    float: left;
+    margin-top: -15px;
+    display: block;
+}
+
+nav svg, nav label, [id^=open]{
+    display: none;
+}
+
+video {                                             /* Tamaño requerido  para el video, reservado para pantallas mas largas */
+    width: 640px;
+    height: 360px;
+}
+
+section {
+    background-color: #1C2833;
+    padding-top: 30px;  
+    width: 95%;
+    margin: 58px auto 58px auto;
+    height: auto;
+    display: block;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 0;
+    box-shadow: 5px 10px 8px #17202A;
+}
+
+h1{
+    color: white; 
+    font-size: xx-large;      
+}
+
+.div-video{
+    width: auto;
+    margin: 30px 5% 60px 3%;
+    background-color: #34495E;
+    display: inline-block;
+    padding: 2%;
+    color: white; 
+    transition: 0.40s;  
+    box-shadow: 3px 6px 4px #566573;
+}
+
+.div-video:hover{
+    transform:scale(1.25);
+}
+
+.div-video p{
+    text-align: justify;
+    margin-top: 20px;
+    font-size: x-large;
+}
+video+div{
+    width: 640px
+}
+
+footer {
+    width: 100%;
+    background-color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+}
+footer svg{
+    width: 30px;
+    height: 30px;
+    padding-right: 20px;
+    transition: 0.40s; 
+}
+footer svg:hover{
+    transform:scale(1.5);
+}
+footer div span{
+    color: white;
+    margin-left: 20px;
+    font-size: 1.8rem
+}
+
+@media screen and (min-width:1254px) and (max-width:1599px){
+
+    nav ul li{
+        font-size: 1.6rem;
+        width: 16%;
+    }
+    
+    #liIMG{
+        width: 17.5%;
+    }
+
+    video {                                 /* Tamaño para los videos, de tal manera que se vea bien en mi pantalla y en otras menores */
+        width: 500px;
+        height: 280px;
+    }
+
+    video+div{
+        width: 500px
+    }
+
+    .div-video{
+        margin: 30px 1% 60px 1%;
+        padding: 1.5%; 
+    }
+
+    #Video_1{
+        margin-right: 3%;
+    }
+
+    section{
+        padding-left: 10px;
+    }
+}
+
+@media screen and (max-width:999px){
+
+    nav ul li{
+        font-size: 1.6rem;
+        display: none;
+        width: 100%;
+        border-top: 1px solid white;
+    }
+    
+    nav img{
+        width: 100px;
+        float: left;
+        margin-top: -20px;
+    }
+
+    nav label {
+        float: right;
+        margin-right: 40px;
+        display: block;
+        cursor: pointer;
+    }
+    
+    nav svg{
+        width: 100px;
+        height: 100px;
+        margin-top: -20px;
+        display: block;
+    }
+
+    #liIMG{
+        width: 100%;
+        padding-top: 24px;
+        padding-bottom: 40px;
+        border-top: 0px;
+        display: block;
+    }
+
+    [id^="open"]:checked .open-check{
+        display: block;
+        width: 100%;
+    }
+
+    video {                                
+        width: 500px;
+        height: 280px;
+    }
+
+    video+div{
+        width: 500px;
+    }
+
+    .div-video{
+        margin: 30px 1% 60px 1%;
+        padding: 1.5%; 
+    }
+
+    #Video_1{
+        margin-right: 3%;
+    }
+
+    section{
+        padding-left: 10px;
+    }
+}
+
